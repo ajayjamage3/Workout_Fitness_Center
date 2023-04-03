@@ -1,0 +1,487 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+   
+    text-decoration: none;
+    
+    }
+    
+    li {
+    
+    list-style: none;
+    
+    }
+ 
+ 
+ .navbar {
+ 
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: space-between;
+    padding-right: 25px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 99%;
+    margin: auto;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ 
+    
+    }
+ 
+    
+    /* LOGO */
+    
+    .logo img{
+    width: 60px;
+    border: 5px solid #b8d8d4;;
+    border-radius: 50%;
+    margin-left: 20px;
+    }
+    
+    /* NAVBAR MENU */
+    
+    .menu {
+    
+    display: flex;
+    
+    gap: 1em;
+    
+    font-size: 18px;
+    
+    }
+    
+    .menu li:hover {
+    
+    background-color: #b8d8d4;
+    
+    border-radius: 5px;
+    
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li {
+    
+    padding: 5px 14px;
+    
+    }
+
+    .menu li a{
+        color: black;
+    }
+    .menu li:hover a{
+        color: white;
+    }
+    
+    /* DROPDOWN MENU */
+    
+    .services {
+    
+    position: relative; 
+    
+    }
+    
+    .dropdown {
+    
+    background-color: white;
+    
+    padding: 1em 0;
+    
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    
+    display: none;
+    
+    border-radius: 8px;
+    
+    top: 35px;
+    
+    }
+    
+    .dropdown li + li {
+    
+    margin-top: 10px;
+    
+    }
+    
+    .dropdown li {
+    
+    padding: 0.5em 1em;
+    
+    width: 8em;
+    
+    text-align: center;
+    
+    }
+    
+    .dropdown li:hover {
+    
+    background-color: #4c9e9e;
+    
+    }
+    
+    .services:hover .dropdown {
+    
+    display: block;
+    
+    }
+    input[type=checkbox]{
+ 
+       display: none;
+       
+       } 
+       
+       /*HAMBURGER MENU*/
+       
+       .hamburger {
+       
+       display: none;
+       margin-right: 10px;
+       font-size: 24px;
+       
+       user-select: none;
+       
+       }
+       @media(min-width: 600px) and (max-width: 1200px) {
+
+        .menu { 
+     
+           display:none;
+           
+           position: absolute;
+           
+           background-color:white;
+           
+           right: 0;
+           
+           left: 0;
+           
+           text-align: center;
+           
+           padding: 16px 0;
+           
+           }
+           
+           .menu li:hover {
+           
+           display: inline-block;
+          
+           background-color:#4c9e9e;
+           
+           transition: 0.3s ease;
+           
+           }
+           
+           .menu li + li {
+           margin-top: 12px;
+           
+           }
+           
+           input[type=checkbox]:checked ~ .menu{
+           
+           display: block;
+           
+           }
+           
+           .hamburger {
+           
+           display: block;
+                  
+           }
+           
+           .dropdown {
+           
+           left: 50%;
+           
+           top: 30px;
+           
+           transform: translateX(35%);
+           
+           }
+           
+           .dropdown li:hover {
+           
+           background-color: #4c9e9e;
+           
+           }
+}
+@media(min-width: 200px) and (max-width: 599px) {
+
+
+    .menu { 
+  
+     display:none;
+     
+     position: absolute;
+     
+     background-color:white;
+     
+     right: 0;
+     
+     left: 0;
+     
+     text-align: center;
+     
+     padding: 16px 0;
+     
+     }
+     
+     .menu li:hover {
+     
+     display: inline-block;
+     
+     background-color:#4c9e9e;
+     
+     transition: 0.3s ease;
+     
+     }
+     
+     .menu li + li {
+     
+     margin-top: 12px;
+     
+     }
+     
+     input[type=checkbox]:checked ~ .menu{
+     
+     display: block;
+     
+     }
+     
+     .hamburger {
+     
+     display: block;
+     margin-right: 10px;
+     }
+     
+     .dropdown {
+     
+     left: 50%;
+     
+     top: 30px;
+     
+     transform: translateX(35%);
+     
+     }
+     
+     .dropdown li:hover {
+     
+     background-color: #4c9e9e;
+     
+     }
+}  
+
+#clinedashtitle{
+    background-color:#b9d9d4;
+    padding: 5px 0px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#clientinfo{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+#clientinfo div{
+    border-radius: 8px;
+}
+#clientname{
+    background-image: url("https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   height: 150px;
+}
+#profimgdiv{
+   width: 30%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#clientnamediv{
+    width: 70%;
+}
+#clientnamediv p{
+    color: white;
+    font-size: 18px;
+}
+
+#profileimg{
+    
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 0.357rem solid #fff;
+    background-color: #fff;
+    box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+    display: block;
+}
+
+#clineclass{
+    width: 48%;
+    height: 130px;
+    overflow: scroll;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+}
+
+@media(min-width: 20px) and (max-width: 700px){
+    #clientinfo{
+        flex-direction: column;
+    }
+    #clientname{
+        width: 95%;
+        margin: auto;
+    }
+    #clineclass{
+        width: 92%;
+        margin: auto;
+        margin-top: 1%;
+    }
+    #profileimg{
+        width: 70px;
+    }
+    #clientnamediv p{
+        font-size: 15px;
+    }
+
+}
+#notclassdiv{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.notclassrender{
+    color: rgb(120, 120, 120);
+    font-size: 17px;
+    word-spacing: 5px;
+}
+
+#searchanc{
+    color: #3b3b3b;
+}
+
+#clientclasstitle{
+    background-color:#b9d9d4;
+    padding: 5px 0px;
+    width: 94%;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+#allclassescard{
+    margin-top: 10px;
+    width: 95%;
+    margin: auto;
+}
+    
+    .imgclassdiv{
+        display: flex;
+        align-items: center;
+    }
+    .classimages{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .classcard{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .imgandins , .actandseat{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        width: 30%;
+        align-items: center;
+    }
+    
+    .joinclassdiv{
+       width: 20%;
+       /* background-color: red; */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     } 
+     .joinclassbutton{
+        padding: 7px;
+        border-radius: 5px;
+        width: 60%;
+        background-color: #b9d8d5;
+        border: none;
+     }
+     .joinclassbutton:hover{
+        background-color:#beebe5;
+        cursor: pointer;
+     }
+     .singleclasslink{
+        text-decoration: none;
+        color: #809c98;
+        text-decoration: underline;
+     }
+    @media(min-width: 430px) and (max-width: 1050px){
+        .imgandins , .actandseat{
+            width: 38%;
+        }
+        .joinclassdiv{
+            width: 15;
+        }
+    }
+    @media(min-width: 20px) and (max-width: 550px){
+        .imgandins{
+            width:37%;
+            flex-direction: column;
+        }
+        .imgandins{
+            text-align: right;
+            align-items: end;
+            font-size: 15px;
+        }
+         .actandseat{
+            width:25%;
+            flex-direction: column;
+            text-align: center;
+        }
+        .joinclassdiv{
+            width: 20%;
+        }
+        .classimages{
+            width: 50px;
+            height: 50px;
+        }
+        .joinclassdiv{
+            width: 35%;
+        }
+    }
+    
+    

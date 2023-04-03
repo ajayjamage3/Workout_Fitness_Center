@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="../Images/favicons/favicon6.ico" type="image/x-icon">
+    <link rel="icon" href="../Images/favicons/favicon6.ico" type="image/x-icon">
+    <title>Workout Trainer</title>
+    <link rel="stylesheet" href="../styles/userDashboard.css">
+    <link rel="stylesheet" href="../styles/trainerDashboard.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+ 
+    
+        <div class="logo"><img src="../Images//logo/logo.png" alt=""></div>
+        
+    
+        
+            <ul class="nav-links">
+        
+    
+        
+                <input type="checkbox" id="checkbox_toggle" />
+        
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+        
+                <div class="menu">
+            
+                    <li><a href="./trainerDashboard.html">Home</a></li>
+            
+                    <li><a href="./trainerClasses.html">Class Info</a></li>
+            
+                    <li><a href="./createClass.html">Creat Class</a></li>
+            
+                    <li><a href="./trainerDashboard.html">Favorites</a></li>
+
+                    <li><a href="../pages/login.html" onclick="logoutFun()">Logout</a></li>
+            
+                </div>
+        
+            </ul>
+        
+    </nav>
+    <p id="clinedashtitle">Trianer's  Dashboard</p>
+    <div id="clientinfo">
+    </div>
+    <p id="clientclasstitle">Created Classes</p>
+    <div id="allclassescard">
+            
+           
+    </div>
+</body>
+</html>
+<script>
+    function logoutFun(){
+    sessionStorage.clear();
+}
+</script>
+<script type="module" src="../scripts/trainerDashboard.js"></script>
