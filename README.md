@@ -28,13 +28,13 @@ Workout Fitness Center is a simple sports and wellness app where users can sched
 Clone the project
 
 ```bash
-  git clone https://github.com/raj8888/kind-stitch-7991
+  git clone https://github.com/ajayjamage3/Workout_Fitness_Center.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd kind-stitch-7991
+  cd Workout_Fitness_Center
 ```
 
 Install dependencies
